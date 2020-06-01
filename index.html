@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Etch-A-Sketch</title>
+        <meta charset="UTF-8"/>
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">  
+    </head>
+
+    <body>
+        <div id="container"></div>
+        <div id="x"></div>
+        <div id="y"></div>
+
+        <div id="draw">
+            <button id="mouse" class="click" type="button">MOUSE</button>
+        </div>
+        <div id="inputs">
+            <form id="color">
+            <label>Color: </label>
+            <input type="color" id="html5colorpicker"  value="#3C3738">
+            <button id="random" type="button">RANDOM</button>
+            <button id="rainbow" type="button">RAINBOW</button>
+            </form>
+            <form id="size">
+                <label id="sizetext">Size:</label>
+                <input id="resolution" type="number" value="10" min="10" max="200">
+                <span id="times">x</span>
+                <input id="length" type="number" value="14" readonly>
+                <button id="resetAll" type="button">ERASE</button>
+            </form>
+
+        </div>
+        <div id="draw">
+            <button id="keyboard" class="click" type="button">&larr;&uarr;&rarr;&darr;</button>
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
+

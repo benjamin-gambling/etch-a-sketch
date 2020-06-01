@@ -1,0 +1,180 @@
+
+body {
+    background: url(etch-a-sketch.jpg) no-repeat center fixed;
+    background-size: auto 800px; 
+    font-family: 'Balsamiq Sans', cursive;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+   
+}
+
+#container{
+    width: 685px;
+    height: 485px;
+    max-width: 100%;
+    max-height: 71.43%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.753);
+    margin: auto;
+    margin-top: -22px;
+    border-style: solid;
+    border-radius: 10px;
+    border: 10px solid rgba(217, 0, 5, 1);
+     
+}
+
+#container div{
+    border:none;
+}
+
+#x, #y{
+    visibility: hidden;
+    position: fixed;
+}
+
+#draw button {
+    background-color: rgba(255, 255, 255, 0.9); 
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #000000b3;
+    margin: 30px 0px 0px 0px;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2em .8em 1.9em .8em;
+    border: 5px solid rgba(217, 0, 5, 0.9);
+    border-radius: 50%;
+    outline: none;
+    width:135px;
+    height: 135px;
+
+}
+
+#draw button:hover {
+    color: rgba(0, 0, 0, 1);
+    transform: scale(1.05);
+}
+
+#draw button:active {
+    color: rgba(0, 0, 0, 1);
+    transform: scale(.95);
+}
+
+#inputs{
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 2em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9); 
+    position: fixed;
+    display: block;
+    flex-wrap: wrap;
+    top: 505px;
+    left: 230px;
+}
+
+#mouse {
+    float: left;
+    position: fixed;
+    left: -125px;
+    top: 466px;
+}
+
+#keyboard {
+    float: right;
+    font-size: 1em;
+    position: fixed;
+    right: -122px;
+    top: 464px;
+}
+
+.click {
+    transition: all .07s ease;
+}
+.clicked {
+    color: rgba(0, 0, 0, 1);
+    transform: scale(.1);
+}
+
+
+#html5colorpicker, #resolution, #length, #resetAll, #random, #rainbow {
+  font-size: 0.55em;
+  position: fixed;
+  text-align: center;
+  font-weight: bold;
+  width: 60px;
+  height: 30px;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.9); 
+  border: none;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+#resetAll {
+    padding: 3px;
+    width: 70px;
+    height: 32px;
+    left: 460px;
+    
+}
+
+#html5colorpicker {
+    left: 325px;
+}
+
+#random, #rainbow {
+    padding: 3px;
+    height: 32px;
+    margin-left: 5px;
+    width: 90px;
+    right: 210px;
+}
+
+#rainbow {
+    right: 100px;
+    width: 95px;
+}
+
+#sizetext {
+    position: fixed;
+    left: 200px;
+}
+
+
+#resolution {
+    left: 275px;
+}
+
+#times {
+    position: fixed;
+    left: 350px;
+}
+
+#length {
+    left: 380px;
+}
+
+
+
+
+#size button:hover, #color button:hover {
+    color: rgba(0, 0, 0, 1);
+    transform: scale(1.05);
+}
+
+#size button:active, #color button:active {
+    color: rgba(0, 0, 0, 1);
+    transform: scale(.95);
+}
+
+#color {
+    margin-bottom: 20px;
+}
+
+
